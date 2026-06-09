@@ -141,10 +141,10 @@ $ sv ga
 
 # Flag [-n] calls each one of these together in a new console
 
-❍ set startallnow 'firefox spotify.com ┊ dolphin ┊ rider ┊ discord ┊ spotify'
+❍ set startallnow 'firefox spotify.com | dolphin | rider | discord | spotify'
 ┊
 ┊ Key: startallnow
-┊ Command: firefox spotify.com ┊ dolphin ┊ rider ┊ discord ┊ spotify
+┊ Command: firefox spotify.com | dolphin | rider | discord | spotify
 ┊
 ❍ startallnow [-n]
 
