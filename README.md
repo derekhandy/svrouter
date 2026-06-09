@@ -19,10 +19,10 @@ Hello World.
 # In REPL Interface
 
 ❍ set p git push origin
-| Key: p
-| Command: git push origin
+┊ Key: p
+┊ Command: git push origin
 ❍ p main
-| Everything up-to-date
+┊ Everything up-to-date
 ```
 
 ## Install
@@ -72,17 +72,17 @@ sv help
 ```bash
 # Set
 $ sv set build go build -o sv
-| Key: build
-| Command: go build -o sv
+┊ Key: build
+┊ Command: go build -o sv
 
 # Read
 $ sv read cd-proj
-| Key: cd-proj
-| Command: cd ~/Projects
+┊ Key: cd-proj
+┊ Command: cd ~/Projects
 
 # Remove
 $ sv remove p
-| Removed: p
+┊ Removed: p
 
 # Call
 $ sv build
@@ -93,7 +93,7 @@ $ sv cd-proj -n # Flag [-n] runs in new window
 
 Setting commands is generally safer in the GUI since parsing syntax doesn't face the same commandline issues.
       
-      - operators: [ && ] [ | ] [ ; ]
+      - operators: [ && ] [ ┊ ] [ ; ]
       
       - language symbols: [ ' ] [ ` ] [ " ]
       
@@ -113,9 +113,9 @@ If necessary, building on to the existing framework to allow calling variables f
 # Basic fire-and-forget usage
 
 $ sv set ga git add .
-| Key: ga
-| Command: git add .
-|
+┊ Key: ga
+┊ Command: git add .
+┊
 $ sv ga
 
 
@@ -123,39 +123,39 @@ $ sv ga
 # Usable only through [-n] flag
 
 ❍ set docs cd ~/Documents
-| Key: docs
-| Command: cd ~/Documents
-|
+┊ Key: docs
+┊ Command: cd ~/Documents
+┊
 ❍ docs -n
 
 
 # Setting operator commands (&&) is possible in CLI with ' ' but GUI is recommended.
 
 ❍ set build 'go build -o sv && ./sv'
-|
-| Key: build
-| Command: go build -o sv && ./sv
-|
+┊
+┊ Key: build
+┊ Command: go build -o sv && ./sv
+┊
 ❍ build
 
 
 # Flag [-n] calls each one of these together in a new console
 
-❍ set startallnow 'firefox spotify.com | dolphin | rider | discord | spotify'
-|
-| Key: startallnow
-| Command: firefox spotify.com | dolphin | rider | discord | spotify
-|
+❍ set startallnow 'firefox spotify.com ┊ dolphin ┊ rider ┊ discord ┊ spotify'
+┊
+┊ Key: startallnow
+┊ Command: firefox spotify.com ┊ dolphin ┊ rider ┊ discord ┊ spotify
+┊
 ❍ startallnow [-n]
 
 
 # 'sv p v1.4.8' runs the command 'git push origin v1.4.8'
 
 ❍ set p 'git push origin'
-|
-| Key: p
-| Command: git push origin
-|
+┊
+┊ Key: p
+┊ Command: git push origin
+┊
 ❍ p v1.4.8
 
 ```
