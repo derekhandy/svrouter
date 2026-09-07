@@ -1,7 +1,7 @@
 # svrouter
 
 
-<b> svrouter </b> A command dictionary and execution manager tool for creating custom console commands with shortcuts. Cross-platform support.
+<b> svrouter </b> A command dictionary and execution manager tool for creating custom console commands with shortcuts.
 
 Requires <b> Go 1.26 </b> or newer.
 
